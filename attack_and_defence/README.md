@@ -6,6 +6,8 @@ docker run --name container-name -itd container-name /bin/bash
 docker exec -it container-name /bin/bash
 
 ## create local flag in container
+nc localhost 15021
+
 password
 
 flag_contents
