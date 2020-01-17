@@ -13,3 +13,9 @@ password
 flag_contents
 
 -> /flag/flag.txt with "FLAG{flag_contents}" is generated.
+
+## Export Dockerfile
+docker save container-name -o container-name.tar
+
+##　Import Dockerfile
+docker load -i container-name.tar
