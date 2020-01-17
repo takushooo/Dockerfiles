@@ -1,0 +1,13 @@
+service unlisted
+{
+  type = UNLISTED
+  socket_type = stream
+  log_type = FILE /var/log/hello.log
+  log_on_success = HOST PID
+  log_on_failure = HOST
+  protocol = tcp
+  wait = no
+  port = 15021
+  user = root
+  server = /opt/scripts/hello
+}
