@@ -17,5 +17,5 @@ flag_contents
 ## Export Dockerfile
 docker save container-name -o container-name.tar
 
-##　Import Dockerfile
+## Import Dockerfile
 docker load -i container-name.tar
