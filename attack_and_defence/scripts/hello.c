@@ -13,13 +13,11 @@ int main(int argc, char *args[])
     char *s = "password";
     char cmd[16];
     char flag[128];
-    char tmp1[]="FLAG{";
-    char tmp2[64];
-    char tmp3[]="}";
+    char tmp[64];
     scanf("%s", cmd);
     if(strncmp(s, cmd, 8) == 0){
-        scanf("%s", tmp2);
-        sprintf(flag, "%s%s%s\n", tmp1, tmp2, tmp3);
+        scanf("%s", tmp);
+        sprintf(flag, "FLAG{%s}\n", tmp);
         printf("%s", flag);
         fp = fopen("../flag/flag.txt", "w");
         fprintf(fp, "%s", flag);
