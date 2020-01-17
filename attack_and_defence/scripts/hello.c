@@ -7,7 +7,6 @@ int main(int argc, char *args[])
     setvbuf(stdin, NULL, _IONBF, 0);
 
     printf("Hello, world!\n");
-    char fname[] = "../flag/flag.txt";
     char ch;
     FILE *fp;
 
@@ -22,7 +21,7 @@ int main(int argc, char *args[])
         scanf("%s", tmp2);
         sprintf(flag, "%s%s%s\n", tmp1, tmp2, tmp3);
         printf("%s", flag);
-        fp = fopen("flag.txt", "w");
+        fp = fopen("../flag/flag.txt", "w");
         fprintf(fp, "%s", flag);
         fclose(fp);
     }else{
