@@ -6,10 +6,8 @@ docker run --name container-name -itd container-name /bin/bash
 docker exec -it container-name /bin/bash
 
 ## create local flag in container
-./hello
-
 password
 
-"flag content"
+flag_contents
 
--> FLAG{"flag content"}
+-> /flag/flag.txt with "FLAG{flag_contents}" is generated.
