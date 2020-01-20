@@ -1,7 +1,7 @@
 ## build
 docker build -t container-name ./
 
-docker run --name container-name -itd container-name /bin/bash
+docker run -p 0.0.0.0:15021:15021 --name container-name -itd container-name /bin/bash
 
 docker exec -it container-name /bin/bash
 
